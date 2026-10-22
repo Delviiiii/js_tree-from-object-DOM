@@ -1,0 +1,2 @@
+"use strict";var food={Drink:{Wine:{},Schnaps:{}},Fruit:{Red:{Cherry:{},Strawberry:{}},Yellow:{Banana:{},Pineapple:{}}}},tree=document.querySelector("#tree");function createTree(e,t){if(0===Object.keys(t).length)return 0;var r=Object.entries(t),n=document.createElement("ul");r.forEach(function(e){var t=document.createElement("li");"string"==typeof e[0]&&(t.textContent=e[0]),n.append(t),createTree(t,e[1])}),e.appendChild(n)}createTree(tree,food);
+//# sourceMappingURL=js_tree-from-object-DOM.4642c038.js.map
