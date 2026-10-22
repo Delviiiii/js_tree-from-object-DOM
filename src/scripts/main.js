@@ -38,10 +38,10 @@ function createTree(node, data) {
 
       ul.append(li);
 
-      node.appendChild(ul);
-
       createTree(li, schema[1]);
     });
+
+    node.appendChild(ul);
   }
 }
 
